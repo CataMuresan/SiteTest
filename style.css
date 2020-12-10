@@ -1,0 +1,200 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+main{
+  font-family: "Heebo", sans-serif;
+}
+
+.landing{
+  min-height: 100vh;
+  background: url(./img/bg\ andreq.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-attachment: fixed;
+  padding: 0rem 5rem;
+  margin: 0%;
+  padding: 0%;
+}
+
+nav{
+  width: 100%;
+  position: fixed;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  min-height: 8vh;
+  background :#ad9887;
+  font-family: "Heebo", sans-serif;
+  z-index: 2;
+  
+}
+
+.logo{
+  color: rgb(240, 240, 240);
+  text-transform: uppercase;
+  letter-spacing: 5px;
+  font-size: 25px;
+}
+
+
+.nav-links{
+  display: flex;
+  justify-content: space-around;
+  width: 30%;
+}
+
+.nav-links a{
+  color: rgb(240, 240, 240);
+  text-decoration: none;
+  letter-spacing: 3px;
+  font-weight: bold;
+  font-size: 14px;
+}
+
+.nav-links li{
+  list-style: none;
+}
+
+.burger{
+  display: none;
+}
+
+.burger div{
+  width: 25px;
+  height: 3px;
+  background-color: rgb(240, 240, 240);
+  margin: 5px;
+  transition: all 0.3s ease;
+}
+
+.big-text{
+  position: absolute;
+  top: 30%;
+  left: 50%;
+  font-size: 5rem;
+  transform: translate(-50%, -30%);
+  font-family: "Lobster", cursive;
+  color: beige;
+  z-index: 0;
+}
+
+.intro{
+  background: black;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.slider{
+  background: rgb(143, 136, 136);
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  transform: translateY(100%);
+}
+
+.intro-text{
+  color: rgb(183, 192, 192);
+  font-family: "Heebo", sans-serif;
+  font-size: 3rem;
+}
+
+.hide{
+  background: black;
+  overflow: hidden;
+}
+
+.hide span{
+  transform: translateY(100%);
+  display: inline-block;
+}
+
+.main-text{
+  padding-top: 2%;
+}
+
+.main-text h4{
+  font-size: 2rem;
+}
+
+
+@media screen and (max-width: 1024px){
+  .nav-links{
+    width: 60%;
+  }
+}
+
+
+@media screen and (max-width: 768px){
+
+  html, body{
+    overflow-x: hidden;
+  }
+
+  .landing{
+    /* width: 50vh; */
+  }
+
+  .nav-links{
+    position: absolute;
+    right: 0px;
+    height: 92vh;
+    top: 8vh;
+    background-color: #ad9887;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 30%;
+    transform: translateX(100%);
+    transition: transform 0.3s ease-in;
+  }
+
+  .nav-links li{
+    opacity: 0;
+  }
+
+  .burger{
+    display: block;
+    cursor: pointer;
+  }
+
+  .intro-text{
+    font-size: 1rem;
+  }
+}
+
+.nav-active{
+  transform: translateX(0%);
+}
+
+@keyframes navLinkFade{
+  from{
+    opacity: 0;
+    transform: translateX(50px);
+  }
+  to{
+    opacity: 1;
+    transform: translateX(0px);
+  }
+}
+
+.toggle .line1{
+  transform: rotate(-45deg) translate(-5px, 6px);
+}
+.toggle .line2{
+  opacity: 0;
+}
+.toggle .line3{
+  transform: rotate(45deg) translate(-5px, -6px);
+}
