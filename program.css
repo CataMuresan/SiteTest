@@ -1,0 +1,72 @@
+.programare-orar{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 150px;
+  background: linear-gradient(90deg, rgba(126,93,1,1) 0%, rgba(201,194,41,1) 49%, rgba(175,91,161,1) 100%);
+
+}
+
+.program h2{
+  text-align: center;
+  font-size: 4em;
+}
+
+.orar{
+  padding-top: 200px;
+}
+
+.orar h2{
+  font-size: 4em;
+  text-align: center;
+}
+
+.orar p{
+  font-family: 'Andika New Basic', sans-serif;
+  line-height: 1.5;
+  font-size: 2em;
+  padding: 0px;
+  padding-top: 40px;
+  text-align: center;
+}
+
+.program p{
+  font-family: 'Andika New Basic', sans-serif;
+  line-height: 1.5;
+  font-size: 2em;
+  padding: 0px;
+  padding-top: 40px;
+  text-align: center;
+}
+
+.contact{
+  display: flex;
+  margin-top: 100px;
+  flex-direction: column;
+  align-items: center;
+}
+
+.contact h2{
+  font-size: 4em;
+  text-align: center;
+}
+
+.contact p{
+  font-family: 'Andika New Basic', sans-serif;
+  line-height: 1.5;
+  font-size: 2em;
+  padding: 0px;
+  padding-top: 0px;
+  text-align: center;
+}
+
+.locatie{
+  display: flex;
+  margin-top: 50px;
+  margin-bottom: 20px;
+  justify-content: center;
+}
+
+.harta{
+  grid-column: 2/3;
+}

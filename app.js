@@ -9,13 +9,38 @@ tl.fromTo('nav', {opacity: 0}, {opacity: 1, duration: 1});
 
 tl.fromTo('.big-text', {opacity: 0}, {opacity: 1, duration: 1}, "-=1");
 
-// window.scrollTo(0, 0);
+const cards = document.getElementsByClassName('card');
+console.log(cards);
+
+
+
 
 const refresh = () =>{
+  for(var i = 0; i < cards.length; i++){
+    cards[i].style.zIndex = "-1";
+  }
   window.onbeforeunload = function () {
     window.scrollTo(0, 0);
   }
 }
 
-refresh();
+const lockScroll = () =>{
+  document.getElementsByTagName('body')[0].style.overflow = 'hidden';
+}
 
+const unlockScroll = () =>{
+  document.getElementsByTagName('body')[0].style.overflow = 'visible' // the default for the css property
+  for(var i = 0; i < cards.length; i++){
+    cards[i].style.zIndex = "0";
+  }
+}
+
+const timer = (miliseconds) => {
+  setTimeout(() => {
+    unlockScroll();
+  }, miliseconds);
+}
+
+refresh();
+lockScroll();
+timer(4000);

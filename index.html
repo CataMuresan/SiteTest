@@ -1,34 +1,34 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
+<head id="header">
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>AndreQ</title>
   <link rel="stylesheet" href="./style.css">
   <link rel="stylesheet" href="./maintext.css">
+  <link rel="stylesheet" href="./program.css">
   <link href="https://fonts.googleapis.com/css2?family=Heebo&family=Lobster&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Andika+New+Basic:ital@1&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
 <body>
   
   <main>
-    <section class="landing">
+    <section class="landing" id="home">
 
       <nav>
         <div class="logo">
-          <h4>AndreQ</h4>
+          <h4><a href="#home">AndreQ</a></h4>
         </div>
         <ul class="nav-links">
           <li>
-            <a href="#">Home</a>
+            <a href="#despre">Despre noi</a>
           </li>
           <li>
-            <a href="#">Contact</a>
+            <a href="#orar">Orar</a>
           </li>
           <li>
-            <a href="#">Galerie</a>
-          </li>
-          <li>
-            <a href="#">Suport</a>
+            <a href="#locatie">Locatie</a>
           </li>
         </ul>
 
@@ -40,7 +40,12 @@
 
       </nav>
 
-      <h2 class="big-text">AndreQ</h2>
+      <div class="big-text">
+        <!-- <h2 class="big-text">AndreQ</h2> -->
+        <img src="./img/logo.png" alt="">
+      </div>
+      
+      
     </section>
   </main>
 
@@ -60,7 +65,7 @@
 
   <div class="slider"></div>
 
-  <div class="cards">
+  <div class="cards" id="despre">
     <div class="card">
       <img src="https://fakeimg.pl/400x300/" alt="" class="card__img">
       <div class="card__content">
@@ -72,6 +77,7 @@
         </p>
       </div>
     </div>
+
     <div class="card">
       <img src="https://fakeimg.pl/400x300/" alt="" class="card__img">
       <div class="card__content">
@@ -83,6 +89,7 @@
         </p>
       </div>
     </div>
+
     <div class="card">
       <img src="https://fakeimg.pl/400x300/" alt="" class="card__img">
       <div class="card__content">
@@ -131,6 +138,44 @@
       </div>
     </div>
   </div>
+
+  <div class="programare-orar" id="orar">
+    <div class="program">
+      <h2>Programare</h2>
+      <p>TEL: 0751225077</p>
+    </div>
+    <div class="orar">
+      <h2>Orar</h2>
+      <p>Luni: 8-20</p>
+      <p>Marti: 8-20</p>
+      <p>Miercuri: 8-20</p>
+      <p>Joi: 8-20</p>
+      <p>Vineri: 8-20</p>
+      <p>Sambata: 8-20</p>
+    </div>
+  </div>
+
+  <div class="contact">
+    <h2>Locatie</h2>
+    <p>Salon este situat pe strada Aurel Vlaciu, nr 25, vis a vis de MegaImage</p>
+  </div>
+
+  <div class="locatie" id="locatie">
+    <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d10928.740950781019!2d23.6234209!3d46.7809542!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0xaaea3bda8559001b!2sANDRE-Q%20frizerie%20-%20hairstyle!5e0!3m2!1sro!2sro!4v1607607560524!5m2!1sro!2sro" width="900px" height="450" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0" class="harta"></iframe>
+  </div>
+
+  <footer>
+    <div class="footer-content">
+      <h3>AndreQ</h3>
+      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. At expedita impedit necessitatibus vitae incidunt commodi vero. Ut officiis quas animi sit saepe minima mollitia impedit, consequuntur repudiandae soluta possimus earum?</p>
+      <ul class="socials">
+        <li><a href=""><i class="fa fa-facebook"></i></a></li>
+      </ul>
+    </div>
+    <div class="footer-bottom">
+      <p>copyright &copy;2020 AndreQ. Designed by Cata</p>
+    </div>
+  </footer>
 
   <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.5.1/gsap.min.js" integrity="sha512-IQLehpLoVS4fNzl7IfH8Iowfm5+RiMGtHykgZJl9AWMgqx0AmJ6cRWcB+GaGVtIsnC4voMfm8f2vwtY+6oPjpQ==" crossorigin="anonymous"></script>
   <script src="./app.js"></script>
